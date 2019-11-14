@@ -1,0 +1,45 @@
+{
+	"name": "workflow-schema-vscode",
+	"displayName": "Serverless Workflow JSON Schema",
+	"description": "%description%",
+	"version": "1.0.0",
+	"icon": "resources/serverless-workflow-logo.png",
+	"publisher": "tsurdilovic",
+	"author": "Tihomir Surdilovic",
+	"license": "Apache-2.0",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"keywords": [
+		"serverless",
+		"workflow",
+		"json",
+		"schema"
+	],
+	"categories": [
+		"Programming Languages",
+		"Linters",
+		"Other"
+	],
+	"homepage": "https://github.com/serverless-workflow/workflow-schema-vscode/blob/master/README.md",
+	"readmeFilename": "README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/serverless-workflow/workflow-schema-vscode.git"
+	},
+	"contributes": {
+		"jsonValidation": [{
+			"fileMatch": "/*.json",
+			"url": "https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/schema/serverless-workflow-schema-01.json"
+		}]
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "tsc -p ./",
+		"tslint": "tslint -t verbose src/*.ts --project tslint.json",
+		"watch": "webpack --mode development --watch --info-verbosity verbose",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test",
+		"webpack": "webpack --mode development"
+	}
+}
