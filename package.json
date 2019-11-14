@@ -28,10 +28,12 @@
 		"url": "https://github.com/serverless-workflow/workflow-schema-vscode.git"
 	},
 	"contributes": {
-		"jsonValidation": [{
-			"fileMatch": "/*.json",
-			"url": "https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/schema/serverless-workflow-schema-01.json"
-		}]
+		"jsonValidation": [
+			{
+				"fileMatch": "/*.json",
+				"url": "https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/schema/serverless-workflow-schema-01.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "webpack --mode production",
@@ -41,5 +43,30 @@
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "npm run compile && node ./node_modules/vscode/bin/test",
 		"webpack": "webpack --mode development"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^4.0.8",
+		"@types/get-port": "^4.0.1",
+		"@types/md5": "^2.1.33",
+		"@types/minimatch": "^3.0.3",
+		"@types/node": "^8.10.40",
+		"@types/xml2js": "^0.4.3",
+		"ts-loader": "^4.4.2",
+		"tslint": "^5.13.0",
+		"typescript": "^2.9.2",
+		"vscode": "^1.1.33",
+		"webpack": "4.41.0",
+		"webpack-cli": "3.3.9"
+	},
+	"dependencies": {
+		"@types/lodash": "^4.14.136",
+		"fast-glob": "^2.2.4",
+		"fs-extra": "^4.0.3",
+		"get-port": "^4.2.0",
+		"lodash": "4.17.14",
+		"md5": "^2.2.1",
+		"minimatch": "^3.0.4",
+		"xml-zero-lexer": "^2.0.5",
+		"xml2js": "^0.4.19"
 	}
 }
