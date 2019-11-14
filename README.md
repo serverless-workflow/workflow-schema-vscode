@@ -4,6 +4,8 @@ JSON Schema support for the serverless workflow specification - https://github.c
 
 ## Features
 
+### Code Hints
+
 This extension provides Code Hints for JSON files in your project against the
 Serverless Workflow specification JSON Schema.
 This includes:
@@ -12,6 +14,19 @@ This includes:
 -   Displaying of mismatched types or missing required properties
 -   Allows use of Ctrl+Space to show available properties
 -   Code completion even for enum types
+
+### Code Snippets
+
+This extension also provides Code Snippets for the serverless workflow specification markup:
+
+-   swn: Create a new workflow definition
+-   swtr: Create new trigger definition
+-   swe: Create new Event State definition
+-   swo: Create new Operation State definition
+-   sws: Create new Switch State definition
+-   swd: Create new Delay State definition
+-   swp: Create new Parallel State definition
+-   swsf: Create new SubFlow State definition
 
 More features coming soon :)
 
