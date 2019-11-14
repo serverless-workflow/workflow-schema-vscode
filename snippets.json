@@ -1,0 +1,119 @@
+{
+	"ServerlessWorkflow - new workflow": {
+		"prefix": "swn",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"version\": \"1.0\",",
+			"\"startsAt\": \"\",",
+			"\"states\": [",
+			"",
+			"]",
+			"}"
+		],
+		"description": "Start a new Serverless Workflow definition."
+	},
+	"ServerlessWorkflow - new trigger definition": {
+		"prefix": "swtr",
+		"body": [
+			"\"triggerDefs\": [{",
+			"\"name\": \"${1:name}\",",
+			"\"source\": \"\",",
+			"\"type\": \"\"",
+			"}]"
+		],
+		"description": "Create a new trigger definition"
+	},
+	"ServerlessWorkflow - new Event State": {
+		"prefix": "swe",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"EVENT\",",
+			"\"end\": false,",
+			"\"events\": [",
+			"{",
+			"\"eventExpression\": \"\",",
+			"\"timeout\": \"\",",
+			"\"actions\": [],",
+			"\"nextState\": \"abc\"",
+			"}",
+			"]",
+			"}"
+		],
+		"description": "Create new event state"
+	},
+	"ServerlessWorkflow - new operation state": {
+		"prefix": "swo",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"OPERATION\",",
+			"\"end\": false,",
+			"\"actionMode\": \"SEQUENTIAL\",",
+			"\"actions\": []",
+			"}"
+		],
+		"description": "Create new operation state"
+	},
+	"ServerlessWorkflow - new switch state": {
+		"prefix": "sws",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"SWITCH\",",
+			"\"end\": false,",
+			"\"choice\": [],",
+			"\"default\": \"\"",
+			"}"
+		],
+		"description": "Create new switch state"
+	},
+	"ServerlessWorkflow - new delay state": {
+		"prefix": "swd",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"DELAY\",",
+			"\"end\": false,",
+			"\"timeDelay\": \"\",",
+			"\"nextState\": \"\"",
+			"}"
+		],
+		"description": "Create new delay state"
+	},
+	"ServerlessWorkflow - new parallel state": {
+		"prefix": "swp",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"PARALLEL\",",
+			"\"end\": false,",
+			"\"branches\": [],",
+			"\"nextState\": \"\"",
+			"}"
+		],
+		"description": "Create new parallel state"
+	},
+	"ServerlessWorkflow - new subflow state": {
+		"prefix": "swsf",
+		"body": [
+			"{",
+			"\"id\": \"${1:id}\",",
+			"\"name\": \"${2:name}\",",
+			"\"type\": \"SUBFLOW\",",
+			"\"end\": false,",
+			"\"waitForCompletion\": true,",
+			"\"workflowId\": \"abc\",",
+			"\"nextState\": \"\"",
+			"}"
+		],
+		"description": "Create new subflow state"
+	}
+}
