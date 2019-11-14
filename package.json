@@ -2,7 +2,7 @@
 	"name": "workflow-schema-vscode",
 	"displayName": "Serverless Workflow JSON Schema",
 	"description": "%description%",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"icon": "resources/serverless-workflow-logo.png",
 	"publisher": "tsurdilovic",
 	"author": "Tihomir Surdilovic",
@@ -29,14 +29,18 @@
 		"url": "https://github.com/serverless-workflow/workflow-schema-vscode.git"
 	},
 	"contributes": {
-		"jsonValidation": [{
-			"fileMatch": "/*.json",
-			"url": "https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/schema/serverless-workflow-schema-01.json"
-		}],
-		"snippets": [{
-			"language": "json",
-			"path": "./snippets.json"
-		}]
+		"jsonValidation": [
+			{
+				"fileMatch": "/*.json",
+				"url": "https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/schema/serverless-workflow-schema-01.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "json",
+				"path": "./snippets.json"
+			}
+		]
 	},
 	"scripts": {
 		"compile": "tsc -p ./",
