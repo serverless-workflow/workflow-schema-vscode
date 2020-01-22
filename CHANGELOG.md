@@ -1,6 +1,11 @@
 # Change Log
 
-All notable changes to the "workflow-schema-vscode" extension will be documented in this file.
+All notable changes to the "workflow-schema-vscode" extension will be
+documented in this file.
+
+## 1.7.0 - 2020-1-21
+
+-   Schema fixes
 
 ## 1.6.0 - 2020-1-21
 
