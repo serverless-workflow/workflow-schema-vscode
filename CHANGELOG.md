@@ -3,6 +3,10 @@
 All notable changes to the "workflow-schema-vscode" extension will be
 documented in this file.
 
+## 1.8.0 - 2020-4-14
+
+-   Updated schema to spec 0.1 release
+
 ## 1.7.0 - 2020-1-21
 
 -   Schema fixes
