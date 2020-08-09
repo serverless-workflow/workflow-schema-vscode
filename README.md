@@ -1,6 +1,6 @@
-# Serverless Workflow Schema VSC Extension
+# Serverless Workflow - VSC Extension
 
-JSON Schema support for the serverless workflow specification - https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec.md
+JSON Schema support for the [CNCF Serverless Workflow Specification](#https://github.com/serverlessworkflow/specification)
 
 ## Features
 
@@ -10,25 +10,17 @@ This extension provides Code Hints for JSON files in your project against the
 Serverless Workflow specification JSON Schema.
 This includes:
 
--   Prompting correct attribute names as you type.
--   Displaying of mismatched types or missing required properties
--   Allows use of Ctrl+Space to show available properties
--   Code completion even for enum types
+- Prompting correct attribute names as you type.
+- Displaying of mismatched types or missing required properties
+- Allows use of Ctrl+Space to show available properties
+- Code completion even for enum types
 
 ### Code Snippets
 
 This extension also provides Code Snippets for the serverless workflow specification markup:
 
--   swn: Create a new workflow definition
--   swtr: Create new trigger definition
--   swe: Create new Event State definition
--   swo: Create new Operation State definition
--   sws: Create new Switch State definition
--   swd: Create new Delay State definition
--   swp: Create new Parallel State definition
--   swsf: Create new SubFlow State definition
-
-More features coming soon :)
+- swn: Create a new workflow definition
+- adding more in next version
 
 ## Building from source
 

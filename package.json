@@ -32,7 +32,7 @@
 		"jsonValidation": [
 			{
 				"fileMatch": "/*.json",
-				"url": "./schemas/serverless-workflow-schema-01.json"
+				"url": "./schemas/workflow.json"
 			}
 		],
 		"snippets": [
