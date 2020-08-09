@@ -1,6 +1,6 @@
 # Serverless Workflow - VSC Extension
 
-JSON Schema support for the [CNCF Serverless Workflow Specification](#https://github.com/serverlessworkflow/specification)
+JSON Schema support for the [CNCF Serverless Workflow Specification](https://github.com/serverlessworkflow/specification)
 
 ## Features
 
